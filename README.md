@@ -4,8 +4,16 @@
     <a href="https://go.dev">
         <img src="https://img.shields.io/badge/Go-1.24-blue.svg?style=for-the-badge&logo=go" alt="Go">
     </a>
+    ![Work in Progress](https://img.shields.io/badge/Work%20In%20Progress-orange?style=for-the-badge)
 </div>
 
 
 ## Tables of Content
 
+- [Installation](#installation)
+- [Features](#features)
+- [Configuration](#configuration)
+
+## Installation<a name="installation"></a>
+## Features<a name="features"></a>
+## Configuration<a name="configuration"></a>
