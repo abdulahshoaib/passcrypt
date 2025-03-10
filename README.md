@@ -3,8 +3,8 @@
     <h5>A local password manager written in Go.</h5>
     <a href="https://go.dev">
         <img src="https://img.shields.io/badge/Go-1.24-blue.svg?style=for-the-badge&logo=go" alt="Go">
+        <img src="https://img.shields.io/badge/Work%20in%20Progress-red" alt="Work in Progress">
     </a>
-    ![Work in Progress](https://img.shields.io/badge/Work%20In%20Progress-orange?style=for-the-badge)
 </div>
 
 
