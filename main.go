@@ -4,12 +4,14 @@ import (
 	"crypto/aes"
 	"crypto/cipher"
 	"crypto/rand"
+	"database/sql"
 	"encoding/hex"
 	"fmt"
 	"io"
 	"os"
 
 	"github.com/joho/godotenv"
+	_ "github.com/mattn/go-sqlite3"
 	"golang.org/x/term"
 )
 
@@ -43,11 +45,24 @@ func encrypt(password, key []byte) (string, error) {
 }
 
 func main() {
+
+	DB, err := sql.Open("sqlite3", "./pwdDB")
+	if err != nil {
+		panic(err)
+	}
+    defer DB.Close()
+
+    // Check if the database is connected
+	err = DB.Ping()
+	if err != nil {
+		panic(err)
+	}
+
 	if err := godotenv.Load(); err != nil {
 		panic(err)
 	}
 
-    fmt.Println("Enter Your Password: ")
+	fmt.Println("Enter Your Password: ")
 	bytePassword, err := term.ReadPassword(int(os.Stdin.Fd()))
 	if err != nil {
 		panic(err)
