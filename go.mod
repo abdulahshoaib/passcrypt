@@ -1,4 +1,4 @@
-module github.com/WhoisCipher/passcyrpt.git
+module github.com/abdulahshoaib/passcyrpt.git
 
 go 1.24.1
 
